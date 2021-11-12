@@ -1,0 +1,38 @@
+div.body{
+    display: flex;
+    background-color: DodgerBlue;
+}
+
+div.body > div{
+    background-color: #f1f1f1;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+}
+
+div.rightBoard{
+    display: flex;
+    background-color: DodgerBlue;
+}
+
+div.rightBoard > div.lineOne{
+    flex: auto;
+    background-color: #f1f1f1;
+    margin: 10px;
+    padding: 10px;
+    font-size: 30px;
+    border: 1em;
+}
+
+div.lineTwo{
+    margin: 10px;
+    padding: 10px;
+    font-size: 30px;
+    border: 1em;
+
+}
+
+div.rightBoardLineTwo{
+    display: flex;
+    background-color: DodgerBlue;
+}
