@@ -1,38 +1,110 @@
-div.body{
-    display: flex;
-    background-color: DodgerBlue;
+.item0 { grid-area: leftMenu; }
+.item1 { grid-area: dashboard; }
+.item2 { grid-area: planning; }
+.item3 { grid-area: chat; }
+.item4 { grid-area: login; }
+.item5 { grid-area: charts; }
+.item6 { grid-area: calendar; }
+.item7 { grid-area: connected; }
+.item8 { grid-area: lastMess; }
+.item9 { grid-area: fileEx; }
+.item10 { grid-area: drag; }
+.item11 { grid-area: addfile; }
+.item12 { grid-area: beweb; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'leftMenu dashboard  planning chat chat login login'
+    'leftMenu charts charts calendar calendar connected connected'
+    'leftMenu lastMess lastMess lastMess lastMess fileEx fileEx'
+    'leftMenu drag drag addfile addfile fileEx fileEx'
+    'beweb beweb beweb beweb beweb beweb beweb';
+  grid-gap: 1em;
+  background-color: #2196F3;
+  padding: 1em;
 }
 
-div.body > div{
-    background-color: #f1f1f1;
-    margin: 10px;
-    padding: 20px;
-    font-size: 30px;
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
 }
 
-div.rightBoard{
-    display: flex;
-    background-color: DodgerBlue;
+.item0 > p{
+    margin-top: 1em;
+    padding: 0.5em;
+    border-style: solid;
+    border-color: black;
 }
 
-div.rightBoard > div.lineOne{
-    flex: auto;
-    background-color: #f1f1f1;
-    margin: 10px;
-    padding: 10px;
-    font-size: 30px;
-    border: 1em;
+.item1{
+    border-style: solid;
+    border-color: black;
 }
 
-div.lineTwo{
-    margin: 10px;
-    padding: 10px;
-    font-size: 30px;
-    border: 1em;
-
+.item2{
+    border-style: solid;
+    border-color: black;
 }
 
-div.rightBoardLineTwo{
-    display: flex;
-    background-color: DodgerBlue;
+.item3{
+    border-style: solid;
+    border-color: black;
+}
+
+
+.item4 > input{
+    position: absolute;
+    right: 4em;
+}
+
+.item5{
+    margin-left: 1em;
+    margin-top: 1em;
+    border-style: solid;
+    height: 8em;
+    width: 7em;
+}
+
+.item6{
+    margin-top: 1em;
+    border-style: solid;
+    height: 8em;
+    width: 7em;
+}
+
+.item7{
+    margin-top: 1em;
+    border-style: solid;
+    height: 8em;
+    width: 7em;
+}
+
+.item8{
+    margin: 1em;
+    border-style: solid;
+    height: 8em;
+}
+
+.item9{
+    margin: 1em;
+    border-style: solid;
+    height: 16em;
+}
+
+.item10{
+    margin: 1em;
+    border-style: solid;
+    height: 8em;
+    width: 25vw;
+}
+
+.item11{
+    margin: 1em;
+    border-style: solid;
+    height: 8em;
+    width: 25vw;
+
 }
